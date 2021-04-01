@@ -1,0 +1,35 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.commit-p,
+.time-p {
+  color: #586069;
+  font-size: 14px;
+}
+
+.folder-name {
+  font-size: 14px;
+  color: #24292e;
+}
+.folder-container {
+  display: flex;
+}
+.folder-container i {
+  margin-top: 15px;
+  margin-right: 15px;
+}
+.container {
+  border-radius: 10px;
+  border: 1px solid #e1e4e8;
+  background-color: white;
+  margin: 0 auto;
+  width: 768px;
+}
