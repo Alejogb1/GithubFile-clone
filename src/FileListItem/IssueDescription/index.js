@@ -1,6 +1,6 @@
-const IssueDescription = () => (
+const IssueDescription = ({ description }) => (
   <>
-    <p className="commit-p">Add flow type</p>
+    <p className="commit-p">{description}</p>
   </>
 );
 export default IssueDescription;

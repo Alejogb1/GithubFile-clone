@@ -7,25 +7,17 @@ const App = ({ data }) => {
   return (
     <div className="App">
       <div className="container">
-        <div className="row">
-          <div className="folder-container">
-            <FileIcon />
-            <FolderName />
+        {data.map((fileItem) => (
+          <div className="row">
+            <div className="folder-container">
+              <FileIcon />
+              <FolderName name={fileItem.folderName} />
+            </div>
+            <IssueDescription description={fileItem.commitMessage} />
+            <Time time={fileItem.date} />
           </div>
-          <IssueDescription />
-          <Time />
-        </div>
+        ))}
       </div>
-      {data.map(item => return (
-         <div className="row">
-         <div className="folder-container">
-           <FileIcon />
-           <FolderName />
-         </div>
-         <IssueDescription />
-         <Time />
-       </div>
-      ))}
     </div>
   );
 };

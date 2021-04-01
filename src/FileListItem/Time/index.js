@@ -1,6 +1,6 @@
-const Time = () => (
+const Time = ({ time }) => (
   <>
-    <p className="time-p">2 months ago</p>
+    <p className="time-p">{time}</p>
   </>
 );
 export default Time;

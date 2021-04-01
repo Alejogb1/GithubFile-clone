@@ -1,5 +1,5 @@
-const FolderName = () => {
-  return <p className="folder-name">App</p>;
+const FolderName = ({ name }) => {
+  return <p className="folder-name">{name}</p>;
 };
 
 export default FolderName;
